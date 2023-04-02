@@ -17,7 +17,8 @@ body {
     width: 100vw;
 }
 
-header {
+
+/*header {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +41,7 @@ header .logo {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.6s;
@@ -87,7 +88,7 @@ header ul li a:hover {
 header.sticky .logo,
 header.sticky ul li a {
     color: #000;
-}
+}*/
 
 .hero {
     position: absolute;
@@ -159,7 +160,7 @@ button {
         font-weight: 700;
         color: #fff;
         text-decoration: none;
-        font-size: 10em;
+        font-size: 6em;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: 0.6s;
@@ -184,7 +185,7 @@ button {
         letter-spacing: 1px;
         font-weight: 500px;
         transition: 0.6s;
-        font-size: 6rem;
+        font-size: 2rem;
         margin-right: 2em;
     }
     header ul li a:hover {
@@ -211,7 +212,7 @@ button {
         position: absolute;
         left: 40px;
         top: 150px;
-        font-size: 25rem;
+        font-size: 15rem;
         color: white;
         animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
         z-index: 2;
@@ -244,7 +245,7 @@ button {
         z-index: 2;
     }
     p {
-        left: 60rem;
+        left: 40rem;
         top: 0rem;
         position: absolute;
         height: 10em;
@@ -256,7 +257,7 @@ button {
         top: 70%;
         position: absolute;
         height: 50px;
-        width: 1000px;
+        width: 600px;
         background-color: var(--primary);
         box-shadow: inset 3px 3px 15px 10px rgba(0, 0, 0, 0.9);
         opacity: 80%;
