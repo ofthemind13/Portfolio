@@ -13,7 +13,7 @@
 
 body {
     background: #000;
-    min-height: 200vh;
+    min-height: 400vh;
     width: 100vw;
 }
 
@@ -137,7 +137,7 @@ button {
 @media (min-width: 930px) {
     body {
         background: #000;
-        min-height: 200vh;
+        min-height: 400vh;
         min-width: 100vw;
     }
     header {
@@ -295,12 +295,18 @@ button {
     }
 }
 
-.ab_1 {
+#about {
     top: 100%;
 }
 
+.ab_1 {
+    position: relative;
+    top: 70%;
+}
+
 .ab_2 {
-    top: 110%;
+    position: relative;
+    top: 90%;
     color: white;
     font-size: 3rem;
 }
