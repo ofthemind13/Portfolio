@@ -197,7 +197,8 @@ button {
         height: 100vh;
         background: url(comp.jpg);
         background-size: cover;
-        background-position: 70% 40%;
+        background-position: 70% 37%;
+        opacity: 80%;
     }
     header.sticky .logo,
     header.sticky ul li a {
@@ -211,7 +212,7 @@ button {
     h1 {
         position: absolute;
         left: 40px;
-        top: 150px;
+        top: 100px;
         font-size: 15rem;
         color: white;
         animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
@@ -238,47 +239,51 @@ button {
         }
     }
     h2 {
-        top: 120px;
+        top: 30px;
         width: 3em;
         color: white;
         font-size: 5rem;
         z-index: 2;
     }
     p {
-        left: 40rem;
-        top: 0rem;
+        text-align: right;
+        left: 50rem;
+        top: 8rem;
         position: absolute;
         height: 10em;
         width: 6em;
         color: var(--primary);
-        font-size: 4rem;
+        font-size: 3rem;
     }
-    .box {
+    /*.box {
         top: 80%;
+        border-radius: 10%;
         position: absolute;
         height: 50px;
-        width: 200px;
+        width: 600px;
         background-color: var(--primary);
         box-shadow: inset 10px 15px 15px 10px rgba(0, 0, 0, 0.9);
-        opacity: 80%;
+        opacity: 60%;
         z-index: 0;
         animation: slide 3s linear forwards;
     }
     @keyframes slide {
         from {
-            width: 0;
+            opacity: 0%;
+            height: 0;
         }
         to {
-            width: 600px;
+            opacity: 60%;
+            height: -50px;
         }
-    }
+    }*/
     button {
         height: 3em;
         width: 6em;
         position: absolute;
-        top: 40rem;
-        left: 120rem;
-        font-size: 4rem;
+        top: 30rem;
+        left: 50rem;
+        font-size: 1rem;
         background: var(--secondary);
         border: 3px solid var(--primary);
         border-radius: 20px;
