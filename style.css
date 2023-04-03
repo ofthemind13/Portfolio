@@ -237,8 +237,15 @@ button {
         0% {
             text-shadow: 2px 4px 10px rgb(6, 224, 253);
         }
+        25% {
+            text-shadow: 2px 4px 15px rgb(6, 224, 253);
+            ;
+        }
         50% {
             text-shadow: 5px 4px 20px rgb(6, 224, 253);
+        }
+        75% {
+            text-shadow: 5px 4px 15px rgb(6, 224, 253);
         }
         100% {
             text-shadow: 2px 4px 10px rgb(6, 224, 253);
@@ -283,37 +290,32 @@ button {
             height: -50px;
         }
     }*/
-    button {
-        position: relative;
+    .button {
+        position: absolute;
         top: 10em;
         left: 50rem;
-        color: var(--primary);
-        text-shadow: 1px 1px 1px rgba(255, 255, 255, .750);
+        width: 30%;
+        color: white;
+        text-shadow: 2px 4px 10px rgb(6, 224, 253);
         font-size: 3rem;
         background-color: rgba(0, 0, 0, .750);
         border: none;
         background: none;
+        text-decoration: none;
     }
-}
-
-#about {
-    top: 50%;
-}
-
-.ab_1 {
-    position: relative;
-    top: 100%;
-}
-
-.ab_2 {
-    position: relative;
-    top: 110%;
-    color: white;
-    font-size: 3rem;
-}
-
-.about_p {
-    top: 150%;
-    left: 30rem;
-    width: 50rem;
+    #about {
+        top: 50%;
+    }
+    .ab_1 {
+        top: 100%;
+    }
+    .ab_2 {
+        top: 110%;
+        color: white;
+        font-size: 3rem;
+    }
+    .about_p {
+        top: 150%;
+        width: 50rem;
+    }
 }
