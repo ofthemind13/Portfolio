@@ -137,7 +137,7 @@ button {
 @media (min-width: 930px) {
     body {
         background: #000;
-        min-height: 400vh;
+        min-height: 1000vh;
         min-width: 100vw;
     }
     header {
@@ -315,7 +315,13 @@ button {
         font-size: 3rem;
     }
     .about_p {
-        top: 150%;
+        left: 30rem;
+        top: 120%;
         width: 50rem;
+    }
+    .con_1 {
+        top: 200%;
+        color: white;
+        font-size: 3rem;
     }
 }
