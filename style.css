@@ -193,6 +193,9 @@ button {
     header ul li a:hover {
         color: var(--primary);
     }
+    .material-icons {
+        margin-left: .5em;
+    }
     .banner {
         position: relative;
         width: 100%;
@@ -330,8 +333,8 @@ button {
         font-size: 3rem;
     }
     .fcf-form-class {
-        position: relative;
-        top: 175%;
+        position: absolute;
+        top: 5%;
         color: white;
         border: 3px white;
         height: 50px;
@@ -340,6 +343,9 @@ button {
     .fcf-label {
         position: relative;
         font-size: 2em;
+    }
+    .fcf-form-control {
+        height: 3em;
     }
     .con_box {
         top: 200%;
