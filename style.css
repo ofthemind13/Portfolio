@@ -17,8 +17,7 @@ body {
     width: 100vw;
 }
 
-
-/*header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,8 +51,9 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
 }
 
 header ul li {
@@ -63,17 +63,21 @@ header ul li {
 
 header ul li a {
     position: relative;
-    margin: 0 15px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 3px;
     font-weight: 500px;
     transition: 0.6s;
-    font-size: 2em;
+    font-size: 1rem;
+    text-align: right;
 }
 
 header ul li a:hover {
     color: var(--primary);
+}
+
+.material-icons {
+    opacity: 100%;
 }
 
 .banner {
@@ -132,7 +136,6 @@ button {
     border: none;
     color: var(--primary);
 }
-*/
 
 @media (min-width: 930px) {
     body {
