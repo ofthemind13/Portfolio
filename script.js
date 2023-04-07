@@ -10,5 +10,5 @@ function scrollWin() {
 
 function scrollWin1() {
 
-    window.scrollTo(0, 1000);
+    window.scrollTo(0, 900);
 }

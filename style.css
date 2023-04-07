@@ -395,29 +395,34 @@ button {
         top: 5%;
         color: white;
         border: 3px white;
-        height: 50px;
-        width: 30px;
+        height: 30px;
+        width: 60px;
     }
     .fcf-label {
         position: relative;
-        font-size: 4em;
+        font-size: 3em;
     }
     .fcf-form-control {
-        height: 5em;
+        height: 3em;
     }
     .con_box {
         top: 175%;
         position: absolute;
         border: 10rem;
         width: 98vw;
-        height: 30rem;
+        height: 27rem;
         border: 2px dotted white;
     }
     .phone {
-        font-size: 2rem;
+        left: 30rem;
+        position: relative;
+        font-size: 3rem;
+        width: 25%;
     }
     .phone1 {
+        left: 30rem;
+        position: relative;
         font-size: 2rem;
-        width: 100rem;
+        width: 300px;
     }
 }
