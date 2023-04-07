@@ -171,11 +171,11 @@ button {
 }
 
 #about {
-    top: 50%;
+    top: 75%;
 }
 
 .ab_1 {
-    top: 100%;
+    top: 150%;
 }
 
 .ab_2 {
@@ -374,10 +374,10 @@ button {
         top: 50%;
     }
     .ab_1 {
-        top: 100%;
+        top: 110%;
     }
     .ab_2 {
-        top: 110%;
+        top: 120%;
         color: white;
         font-size: 3rem;
     }
@@ -387,8 +387,7 @@ button {
         width: 50rem;
     }
     .con_1 {
-        position: relative;
-        top: 311px;
+        top: 160%;
         font-size: 3rem;
     }
     .fcf-form-class {
@@ -401,17 +400,24 @@ button {
     }
     .fcf-label {
         position: relative;
-        font-size: 2em;
+        font-size: 4em;
     }
     .fcf-form-control {
-        height: 3em;
+        height: 5em;
     }
     .con_box {
-        top: 200%;
+        top: 175%;
         position: absolute;
         border: 10rem;
-        width: 30rem;
-        height: 15rem;
+        width: 98vw;
+        height: 30rem;
         border: 2px dotted white;
+    }
+    .phone {
+        font-size: 2rem;
+    }
+    .phone1 {
+        font-size: 2rem;
+        width: 100rem;
     }
 }
