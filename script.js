@@ -12,3 +12,8 @@ function scrollWin1() {
 
     window.scrollTo(0, 1150);
 }
+
+function scrollWin2() {
+
+    window.scrollTo(0, 1900);
+}
