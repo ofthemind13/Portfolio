@@ -410,15 +410,20 @@ button {
         order: 5;
         position: relative;
         font-size: 3rem;
-        border: solid var(--primary);
+        border: 3px solid var(--secondary);
     }
     .button2 {
-        left: 80%;
-        top: 75%;
-        height: 5rem;
-        width: 5rem;
-        font: 6rem;
-        border-radius: 50%;
-        box-shadow: 1px 1px 1px 1px var(--primary);
+        color: white;
+        left: 58%;
+        top: 55%;
+        font-size: 4rem;
+        text-shadow: 1px 3px rgba(6, 224, 253, 0.50);
+        border: none;
+        padding: none;
+        background: none;
+    }
+    .button2:hover {
+        color: var(--primary);
+        text-shadow: 1px 1px white;
     }
 }
