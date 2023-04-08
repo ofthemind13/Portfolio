@@ -387,48 +387,37 @@ button {
         width: 50rem;
     }
     .con_1 {
-        top: 160%;
+        top: 200%;
         font-size: 3rem;
-    }
-    .fcf-form-class {
-        position: absolute;
-        top: 5%;
-        color: white;
-        border: 3px white;
-        height: 30px;
-        width: 60px;
-    }
-    .fcf-label {
-        position: relative;
-        font-size: 3em;
-    }
-    .fcf-form-control {
-        height: 3em;
     }
     .con_box {
-        top: 175%;
+        top: 210%;
         position: absolute;
-        border: 10rem;
-        width: 98vw;
-        height: 27rem;
-        border: 2px dotted white;
+        height: 26rem;
+        width: 90%;
+        border: dotted;
+        color: var(--secondary);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 5%;
     }
-    .phone {
-        top: -11rem;
-        left: 30rem;
+    .name,
+    .email,
+    .tel {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        order: 5;
         position: relative;
         font-size: 3rem;
-        width: 25%;
+        border: solid var(--primary);
     }
-    .phone1 {
-        top: -11rem;
-        left: 30rem;
-        position: relative;
-        font-size: 2rem;
-        width: 300px;
-    }
-    .email {
-        font-size: 3em;
-        top: 10rem;
+    .button2 {
+        left: 65%;
+        top: 40%;
+        height: 4rem;
+        width: 6rem;
+        font: 4rem;
+        padding: 1px;
+        border-radius: 10%;
     }
 }

@@ -5,10 +5,10 @@ window.addEventListener("scroll", function() {
 
 function scrollWin() {
 
-    window.scrollTo(0, 500);
+    window.scrollTo(0, 600);
 }
 
 function scrollWin1() {
 
-    window.scrollTo(0, 900);
+    window.scrollTo(0, 1150);
 }
