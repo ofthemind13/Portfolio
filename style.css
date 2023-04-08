@@ -392,9 +392,10 @@ button {
     }
     .con_box {
         top: 210%;
+        left: 23%;
         position: absolute;
         height: 26rem;
-        width: 90%;
+        width: 50%;
         border: dotted;
         color: var(--secondary);
         flex-direction: column;
@@ -412,12 +413,12 @@ button {
         border: solid var(--primary);
     }
     .button2 {
-        left: 65%;
-        top: 40%;
-        height: 4rem;
-        width: 6rem;
-        font: 4rem;
-        padding: 1px;
-        border-radius: 10%;
+        left: 80%;
+        top: 75%;
+        height: 5rem;
+        width: 5rem;
+        font: 6rem;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px 1px var(--primary);
     }
 }
