@@ -414,15 +414,21 @@ button {
         border: 2px dotted white;
     }
     .phone {
+        top: -11rem;
         left: 30rem;
         position: relative;
         font-size: 3rem;
         width: 25%;
     }
     .phone1 {
+        top: -11rem;
         left: 30rem;
         position: relative;
         font-size: 2rem;
         width: 300px;
+    }
+    .email {
+        font-size: 3em;
+        top: 10rem;
     }
 }
