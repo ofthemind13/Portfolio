@@ -429,7 +429,7 @@ button {
     .work {
         width: 100vw;
         height: 100vh;
-        background-color: white;
+        background-color: var(--secondary);
         top: 300%;
         position: absolute;
     }
@@ -438,7 +438,7 @@ button {
         top: 10%;
     }
     .project_1 {
-        color: var(--secondary);
+        color: var(--primary);
         text-shadow: 4px 2px 10px var(--primary);
         text-decoration: none;
         font-size: 4rem;
@@ -446,6 +446,6 @@ button {
         top: 10%;
     }
     .project_1:visited {
-        color: var(--secondary);
+        color: white;
     }
 }
