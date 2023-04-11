@@ -4,169 +4,11 @@
     --secondary: rgb(53, 55, 78);
 }
 
-@media screen (min-width:360) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Teko', sans-serif;
-    }
-    body {
-        background: #000;
-        min-height: 400vh;
-        width: 100vw;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.6s;
-        padding: 20px 10px;
-        z-index: 10000;
-    }
-    header.sticky {
-        padding: 5px 10px;
-        background: #fff;
-    }
-    header .logo {
-        position: relative;
-        font-weight: 700;
-        color: #fff;
-        text-decoration: none;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: 0.6s;
-        margin-left: .5em;
-        text-shadow: 4px 2px 10px rgba(6, 224, 253, 0.794);
-    }
-    header ul {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        align-items: right;
-    }
-    header ul li {
-        position: relative;
-        list-style: none;
-    }
-    /*header ul li a {
-    left: 1rem;
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 3px;
-    font-weight: 500px;
-    transition: 0.6s;
-    font-size: 1rem;
-    text-align: right;
-}*/
-    header ul li a:hover {
-        color: var(--primary);
-    }
-    .material-icons {
-        opacity: 100%;
-    }
-    .banner {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: url(comp.jpg);
-        background-size: cover;
-        opacity: 80%;
-    }
-    header.sticky .logo,
-    header.sticky ul li a {
-        color: #000;
-    }
-    .hero {
-        position: absolute;
-        top: 20%;
-        height: 100vh;
-    }
-    h1 {
-        position: absolute;
-        left: 40px;
-        top: .5em;
-        font-size: 5rem;
-        color: white;
-        animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
-        z-index: 2;
-        /*text-shadow: 2px 4px 10px rgb(6, 224, 253);*/
-    }
-    @keyframes grow {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 100%;
-        }
-    }
-    @keyframes animate {
-        0% {
-            text-shadow: 2px 4px 10px rgb(6, 224, 253);
-        }
-        25% {
-            text-shadow: 2px 4px 15px rgb(6, 224, 253);
-            ;
-        }
-        50% {
-            text-shadow: 5px 4px 20px rgb(6, 224, 253);
-        }
-        75% {
-            text-shadow: 5px 4px 15px rgb(6, 224, 253);
-        }
-        100% {
-            text-shadow: 2px 4px 10px rgb(6, 224, 253);
-        }
-    }
-    h2 {
-        position: absolute;
-        color: white;
-        font-size: 2em;
-        letter-spacing: 1px;
-    }
-    p {
-        position: relative;
-        left: 10rem;
-        top: 20%;
-        height: 3rem;
-        width: 6em;
-        color: var(--primary);
-        font-size: 3em;
-    }
-    button {
-        height: 3em;
-        width: 6em;
-        position: absolute;
-        bottom: 7em;
-        left: 52%;
-        font-size: 1.5em;
-        background: var(--secondary);
-        border: none;
-        color: var(--primary);
-    }
-    #about {
-        top: 75%;
-    }
-    .ab_1 {
-        top: 150%;
-    }
-    .ab_2 {
-        top: 110%;
-        color: white;
-        font-size: 3rem;
-    }
-    .about_p {
-        left: 30rem;
-        top: 120%;
-        width: 50rem;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
 }
 
 @media screen and (min-width: 930px) {
@@ -427,4 +269,162 @@
     .project_1:visited {
         color: white;
     }
+}
+
+@media screen and (min-width:320px) {
+    body {
+        background-color: #000;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 10px;
+    z-index: 10000;
+}
+
+header.sticky {
+    padding: 5px 5px;
+    background: #fff;
+}
+
+header .logo {
+    top: .5px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    margin-left: .25em;
+    text-shadow: 4px 2px 10px rgba(6, 224, 253, 0.794);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 1rem;
+    margin-right: 2em;
+}
+
+header ul li a:hover {
+    color: var(--primary);
+}
+
+.material-icons {
+    margin-left: .5em;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(comp.jpg);
+    background-size: cover;
+    background-position: 70% 37%;
+    opacity: 80%;
+}
+
+header.sticky ul li a {
+    color: #000;
+    height: 10px;
+}
+
+header.sticky .logo {
+    top: 1px;
+    color: #000;
+}
+
+.hero {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+h1 {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font-size: 15rem;
+    color: white;
+    animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
+    z-index: 2;
+    /*text-shadow: 2px 4px 10px rgb(6, 224, 253);*/
+}
+
+@keyframes grow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        text-shadow: 2px 4px 10px rgb(6, 224, 253);
+    }
+    25% {
+        text-shadow: 2px 4px 15px rgb(6, 224, 253);
+        ;
+    }
+    50% {
+        text-shadow: 5px 4px 20px rgb(6, 224, 253);
+    }
+    75% {
+        text-shadow: 5px 4px 15px rgb(6, 224, 253);
+    }
+    100% {
+        text-shadow: 2px 4px 10px rgb(6, 224, 253);
+    }
+}
+
+h2 {
+    top: 30px;
+    width: 3em;
+    color: white;
+    font-size: 5rem;
+    z-index: 2;
+}
+
+p {
+    text-align: right;
+    left: 50rem;
+    top: 6rem;
+    position: absolute;
+    height: 10em;
+    width: 6em;
+    color: var(--primary);
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
 }
