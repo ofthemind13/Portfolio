@@ -374,7 +374,7 @@ h1 {
     position: absolute;
     left: 40px;
     top: 100px;
-    font-size: 15rem;
+    font-size: 7rem;
     color: white;
     animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
     z-index: 2;
