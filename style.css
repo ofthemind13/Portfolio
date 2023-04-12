@@ -11,6 +11,149 @@
     font-family: 'Teko', sans-serif;
 }
 
+@media screen,
+(max-width:320px) and (min-width:120px) {
+    body {
+        background-color: #000;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 20px 10px;
+        z-index: 10000;
+    }
+    header.sticky {
+        padding: 5px 5px;
+        background: #fff;
+    }
+    header .logo {
+        top: .5px;
+        text-align: center;
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.6s;
+        margin-left: .25em;
+        text-shadow: 4px 2px 10px rgba(6, 224, 253, 0.794);
+    }
+    header ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+    }
+    header ul li {
+        position: relative;
+        list-style: none;
+    }
+    header ul li a {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 500px;
+        transition: 0.6s;
+        font-size: 1rem;
+    }
+    header ul li a:hover {
+        color: var(--primary);
+    }
+    .material-icons {
+        margin-left: .5em;
+    }
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(comp.jpg);
+        background-size: cover;
+        background-position: 70% 37%;
+        opacity: 80%;
+    }
+    header.sticky ul li a {
+        color: #000;
+        height: 10px;
+    }
+    header.sticky .logo {
+        top: 1px;
+        color: #000;
+    }
+    .hero {
+        position: absolute;
+        left: 10%;
+        top: 30%;
+    }
+    h1 {
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        font-size: 7rem;
+        color: white;
+        animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
+        z-index: 2;
+        /*text-shadow: 2px 4px 10px rgb(6, 224, 253);*/
+    }
+    @keyframes grow {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
+    @keyframes animate {
+        0% {
+            text-shadow: 2px 4px 10px rgb(6, 224, 253);
+        }
+        25% {
+            text-shadow: 2px 4px 15px rgb(6, 224, 253);
+            ;
+        }
+        50% {
+            text-shadow: 5px 4px 20px rgb(6, 224, 253);
+        }
+        75% {
+            text-shadow: 5px 4px 15px rgb(6, 224, 253);
+        }
+        100% {
+            text-shadow: 2px 4px 10px rgb(6, 224, 253);
+        }
+    }
+    h2 {
+        top: 30px;
+        width: 3em;
+        color: white;
+        font-size: 5rem;
+        z-index: 2;
+    }
+    p {
+        text-align: right;
+        left: 50rem;
+        top: 6rem;
+        position: absolute;
+        height: 10em;
+        width: 6em;
+        color: var(--primary);
+        font-size: 3rem;
+        text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
+    }
+}
+
 @media screen and (min-width: 930px) {
     body {
         background: #000;
@@ -269,162 +412,4 @@
     .project_1:visited {
         color: white;
     }
-}
-
-@media screen and (min-width:320px) {
-    body {
-        background-color: #000;
-    }
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 20px 10px;
-    z-index: 10000;
-}
-
-header.sticky {
-    padding: 5px 5px;
-    background: #fff;
-}
-
-header .logo {
-    top: .5px;
-    text-align: center;
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.6s;
-    margin-left: .25em;
-    text-shadow: 4px 2px 10px rgba(6, 224, 253, 0.794);
-}
-
-header ul {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
-}
-
-header ul li {
-    position: relative;
-    list-style: none;
-}
-
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500px;
-    transition: 0.6s;
-    font-size: 1rem;
-    margin-right: 2em;
-}
-
-header ul li a:hover {
-    color: var(--primary);
-}
-
-.material-icons {
-    margin-left: .5em;
-}
-
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(comp.jpg);
-    background-size: cover;
-    background-position: 70% 37%;
-    opacity: 80%;
-}
-
-header.sticky ul li a {
-    color: #000;
-    height: 10px;
-}
-
-header.sticky .logo {
-    top: 1px;
-    color: #000;
-}
-
-.hero {
-    position: absolute;
-    left: 10%;
-    top: 30%;
-}
-
-h1 {
-    position: absolute;
-    left: 40px;
-    top: 100px;
-    font-size: 7rem;
-    color: white;
-    animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
-    z-index: 2;
-    /*text-shadow: 2px 4px 10px rgb(6, 224, 253);*/
-}
-
-@keyframes grow {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes animate {
-    0% {
-        text-shadow: 2px 4px 10px rgb(6, 224, 253);
-    }
-    25% {
-        text-shadow: 2px 4px 15px rgb(6, 224, 253);
-        ;
-    }
-    50% {
-        text-shadow: 5px 4px 20px rgb(6, 224, 253);
-    }
-    75% {
-        text-shadow: 5px 4px 15px rgb(6, 224, 253);
-    }
-    100% {
-        text-shadow: 2px 4px 10px rgb(6, 224, 253);
-    }
-}
-
-h2 {
-    top: 30px;
-    width: 3em;
-    color: white;
-    font-size: 5rem;
-    z-index: 2;
-}
-
-p {
-    text-align: right;
-    left: 50rem;
-    top: 6rem;
-    position: absolute;
-    height: 10em;
-    width: 6em;
-    color: var(--primary);
-    font-size: 3rem;
-    text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
 }
