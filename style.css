@@ -351,14 +351,14 @@
         width: 50rem;
     }
     .con_1 {
-        top: 200%;
+        top: 300%;
         font-size: 3rem;
     }
     .con_box {
         top: 210%;
         left: 23%;
         position: absolute;
-        height: 26rem;
+        height: 30rem;
         width: 50%;
         border: dotted;
         color: var(--secondary);
@@ -369,7 +369,7 @@
     .name,
     .email,
     .tel {
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-left: 3rem;
         order: 5;
         position: relative;
@@ -377,8 +377,9 @@
         border: 3px solid var(--secondary);
     }
     .button2 {
+        position: relative;
         color: white;
-        left: 58%;
+        left: 10%;
         top: 55%;
         font-size: 4rem;
         text-shadow: 1px 3px rgba(6, 224, 253, 0.50);
@@ -407,7 +408,7 @@
         text-decoration: none;
         font-size: 4rem;
         position: relative;
-        top: 10%;
+        top: 20%;
     }
     .project_1:visited {
         color: white;
