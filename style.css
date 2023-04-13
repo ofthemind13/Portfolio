@@ -22,7 +22,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -36,13 +36,12 @@
         background: #fff;
     }
     header .logo {
-        top: .5px;
-        text-align: center;
+        top: 1px;
         position: relative;
         font-weight: 700;
         color: #fff;
         text-decoration: none;
-        font-size: 3em;
+        font-size: 4em;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: 0.6s;
@@ -53,8 +52,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: right;
-        align-items: right;
+        justify-content: center;
+        align-items: center;
     }
     header ul li {
         position: relative;
@@ -68,7 +67,7 @@
         letter-spacing: 1px;
         font-weight: 500px;
         transition: 0.6s;
-        font-size: 1rem;
+        font-size: 2rem;
     }
     header ul li a:hover {
         color: var(--primary);
@@ -100,9 +99,10 @@
     }
     h1 {
         position: absolute;
-        left: 40px;
-        top: 100px;
-        font-size: 7rem;
+        left: 22px;
+        top: 5rem;
+        width: 20rem;
+        font-size: 3rem;
         color: white;
         animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
         z-index: 2;
@@ -134,23 +134,119 @@
             text-shadow: 2px 4px 10px rgb(6, 224, 253);
         }
     }
+    .button {
+        position: absolute;
+        top: 8em;
+        left: 12rem;
+        width: 30%;
+        color: white;
+        text-shadow: 2px 4px 10px rgb(6, 224, 253);
+        font-size: 3rem;
+        background-color: rgba(0, 0, 0, .750);
+        border: none;
+        background: none;
+        text-decoration: none;
+    }
+    .button:hover {
+        color: var(--primary);
+        text-shadow: 2px 4px 10px white;
+    }
     h2 {
         top: 30px;
         width: 3em;
         color: white;
-        font-size: 5rem;
+        font-size: 2rem;
         z-index: 2;
     }
     p {
-        text-align: right;
-        left: 50rem;
-        top: 6rem;
+        text-align: left;
+        left: .5rem;
+        top: 15rem;
         position: absolute;
-        height: 10em;
+        height: 20em;
         width: 6em;
         color: var(--primary);
-        font-size: 3rem;
+        font-size: 2rem;
         text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
+    }
+    #about {
+        top: 50%;
+    }
+    .ab_1 {
+        top: 110%;
+    }
+    .ab_2 {
+        top: 120%;
+        color: white;
+        font-size: 3rem;
+    }
+    .about_p {
+        left: 30rem;
+        top: 120%;
+        width: 50rem;
+    }
+    .con_1 {
+        top: 300%;
+        font-size: 3rem;
+    }
+    .con_box {
+        top: 210%;
+        left: 23%;
+        position: absolute;
+        height: 30rem;
+        width: 50%;
+        border: dotted;
+        color: var(--secondary);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 5%;
+    }
+    .name,
+    .email,
+    .tel {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        order: 5;
+        position: relative;
+        font-size: 3rem;
+        border: 3px solid var(--secondary);
+    }
+    .button2 {
+        position: relative;
+        color: white;
+        left: 10%;
+        top: 55%;
+        font-size: 4rem;
+        text-shadow: 1px 3px rgba(6, 224, 253, 0.50);
+        border: none;
+        padding: none;
+        background: none;
+    }
+    .button2:hover {
+        color: var(--primary);
+        text-shadow: 1px 1px white;
+    }
+    .work {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--secondary);
+        top: 300%;
+        position: absolute;
+    }
+    .work_1 {
+        position: relative;
+        top: 10%;
+    }
+    .project_1 {
+        color: var(--primary);
+        text-shadow: 4px 2px 10px var(--primary);
+        text-decoration: none;
+        font-size: 4rem;
+        position: relative;
+        top: 20%;
+    }
+    .project_1:visited {
+        color: white;
     }
 }
 
@@ -184,7 +280,7 @@
         font-weight: 700;
         color: #fff;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 4em;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: 0.6s;
@@ -244,8 +340,9 @@
     h1 {
         position: absolute;
         left: 40px;
-        top: 100px;
-        font-size: 15rem;
+        top: 1rem;
+        width: 50rem;
+        font-size: 5rem;
         color: white;
         animation: animate 10s ease-in-out infinite, grow 3s linear forwards;
         z-index: 2;
@@ -285,15 +382,17 @@
         z-index: 2;
     }
     p {
-        text-align: right;
-        left: 50rem;
-        top: 6rem;
+        background-color: rgba(53, 55, 78, .09);
+        text-align: left;
+        left: 8rem;
+        top: 10rem;
         position: absolute;
-        height: 10em;
+        height: 7em;
         width: 6em;
         color: var(--primary);
         font-size: 3rem;
         text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
+        z-index: 10000;
     }
     /*.box {
         top: 80%;
@@ -319,8 +418,8 @@
     }*/
     .button {
         position: absolute;
-        top: 10em;
-        left: 40rem;
+        top: 4em;
+        left: 50rem;
         width: 30%;
         color: white;
         text-shadow: 2px 4px 10px rgb(6, 224, 253);
