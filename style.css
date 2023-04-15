@@ -333,9 +333,10 @@
         color: #000;
     }
     .hero {
+        height: 100vh;
+        width: 90vw;
+        background-color: var(--secondary);
         position: absolute;
-        left: 10%;
-        top: 30%;
     }
     h1 {
         position: absolute;
@@ -445,9 +446,11 @@
         font-size: 3rem;
     }
     .about_p {
+        background-color: rgba(53, 55, 78, 0.65);
         left: 30rem;
         top: 120%;
         width: 50rem;
+        z-index: 1;
     }
     .con_1 {
         top: 300%;
