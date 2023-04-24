@@ -263,7 +263,11 @@
 
 @media screen and (min-width: 930px) {
     body {
-        background: #000;
+        background-image: url(comp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
         min-height: 1000vh;
         min-width: 100vw;
     }
