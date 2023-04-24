@@ -2,6 +2,7 @@
 :root {
     --primary: rgba(6, 224, 253, 0.794);
     --secondary: rgb(53, 55, 78);
+    --button: #081a30;
 }
 
 * {
@@ -149,9 +150,8 @@
         color: white;
         text-shadow: 2px 4px 10px rgb(6, 224, 253);
         font-size: 3rem;
-        background-color: rgba(0, 0, 0, .750);
         border: none;
-        background: none;
+        background-color: var(--button);
         text-decoration: none;
     }
     .button:hover {
@@ -345,15 +345,16 @@
     }
     .hero {
         top: 9em;
-        height: 70%;
-        width: 90%;
+        height: 32em;
+        width: 90em;
         background-color: var(--secondary);
         position: absolute;
     }
-    img {
+    .img_hero {
+        margin-top: 1em;
         filter: sepia(300%) hue-rotate(160deg) saturate(450%);
         margin-left: 33em;
-        height: 40em;
+        height: 30em;
         width: 50em;
     }
     h1 {
@@ -402,16 +403,18 @@
     }
     p {
         background-color: rgba(53, 55, 78, .09);
-        text-align: left;
+        text-align: center;
         left: 8rem;
         top: 10rem;
         position: absolute;
         height: 7em;
-        width: 6em;
+        width: 8em;
+        padding: 1em;
         color: var(--primary);
-        font-size: 3rem;
+        font-size: 2rem;
         text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
         z-index: 10000;
+        border-radius: 3%;
     }
     /*.box {
         top: 80%;
@@ -438,37 +441,71 @@
     .button {
         justify-self: center;
         position: absolute;
-        top: 8em;
-        left: 8rem;
-        width: 20%;
+        top: 13em;
+        left: 6rem;
+        width: 10em;
         color: white;
         text-shadow: 2px 4px 10px rgb(6, 224, 253);
-        font-size: 3rem;
+        font-size: 2rem;
         background-color: rgba(0, 0, 0, .750);
         border: 3px solid var(--primary);
-        background: var(--secondary);
+        background: var(--button);
         text-decoration: none;
     }
     .button:hover {
         color: var(--primary);
         text-shadow: 2px 4px 10px white;
     }
-    #about {
-        top: 50%;
-    }
+   /* #about {
+        top: 60%;
+        background: url(transformation.jpg);
+        height: 45em;
+        filter: sepia(10%), hue-rotate(4deg), saturate(400%);
+    }*/
+   .about_img {
+
+    position: absolute;
+    height: 45em;
+    width: 100em;
+    z-index: -1;
+   }
     .ab_1 {
-        top: 110%;
+        left: 1em;
+        position: relative;
+        top: 1em;
+        color: black;
+        z-index: 100000;
     }
     .ab_2 {
         top: 120%;
         color: white;
         font-size: 3rem;
     }
+    .about_us {
+        justify-content: center;
+        align-content: center;
+    }
+    span {
+        top: 1px;
+        text-align: center;
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.6s;
+        margin-left: .25em;
+        text-shadow: 4px 2px 10px rgba(6, 224, 253, 0.794);
+    }
+    
     .about_p {
-        background-color: rgba(53, 55, 78, 0.65);
-        left: 30rem;
-        top: 120%;
-        width: 50rem;
+        background-color: rgba(0,0,0,0.90);
+        left: 8rem;
+        top: 30em;
+        width: 70rem;
+        height: 10em;
         box-shadow: 0px 1px 10px 1px var(--primary);
         text-align: center;
     }
@@ -508,8 +545,9 @@
     .button2 {
         position: relative;
         color: white;
-        left: 5%;
-        top:10%;
+        left: 1em;
+        top: 1em;
+        width: 5em;
         font-size: 2rem;
         text-shadow: 1px 3px rgba(6, 224, 253, 0.50);
         border: 3px solid var(--primary);
@@ -528,6 +566,7 @@
         position: absolute;
     }
     .work_1 {
+        left: 1em;
         position: relative;
         top: 10%;
     }

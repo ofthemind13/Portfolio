@@ -3,17 +3,17 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-function scrollWin() {
+function scrollAbout() {
 
-    window.scrollTo(0, 600);
+    window.scrollTo(0, 700);
 }
 
-function contactInfo() {
+function scrollContact() {
 
     window.scrollTo(0, 1400);
 }
 
-function scrollWin2() {
+function scrollWork() {
 
-    window.scrollTo(0, 1900);
+    window.scrollTo(0, 2200);
 }
