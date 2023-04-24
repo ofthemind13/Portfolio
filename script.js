@@ -8,9 +8,9 @@ function scrollWin() {
     window.scrollTo(0, 600);
 }
 
-function scrollWin1() {
+function contactInfo() {
 
-    window.scrollTo(0, 1200);
+    window.scrollTo(0, 1400);
 }
 
 function scrollWin2() {
