@@ -144,13 +144,13 @@
     }
     .button {
         position: absolute;
-        top: 8em;
+        top: 13em;
         left: 12rem;
         width: 30%;
         color: white;
         text-shadow: 2px 4px 10px rgb(6, 224, 253);
-        font-size: 3rem;
-        border: none;
+        font-size: 1.5rem;
+        border: 3px solid var(--primary);
         background-color: var(--button);
         text-decoration: none;
     }
@@ -178,7 +178,11 @@
         text-shadow: 3px 3px 3px 3px rgba(256, 256, 256, 0.794);
     }
     #about {
-        top: 50%;
+        top: 55%;
+    }
+    .about_img {
+        position: absolute;
+        top: 50em;
     }
     .ab_1 {
         top: 110%;
@@ -193,6 +197,7 @@
         top: 120%;
         width: 20rem;
         padding-bottom: 3em;
+        font-size: 1rem;
     }
     .con_1 {
         position: absolute;
@@ -214,13 +219,18 @@
     .name,
     .email,
     .tel {
+        color: var(--primary);
         width: 6em;
         margin-top: 1rem;
         margin-left: 1rem;
         order: 5;
         position: relative;
         font-size: 2rem;
-        border: 3px solid var(--secondary);
+        border-bottom: 3px solid var(--primary);
+        outline: none;
+        border: none;
+        background: transparent;
+
     }
     /*.button2 {
         position: relative;
@@ -263,11 +273,7 @@
 
 @media screen and (min-width: 930px) {
     body {
-        background-image: url(comp.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+        
         min-height: 1000vh;
         min-width: 100vw;
     }
@@ -515,8 +521,9 @@
     }
     .con_1 {
         margin-left: 2em;
-        position: relative;
-        top: 5%;
+        position: absolute;
+        top: 100rem;
+        left: 2rem;
         font-size: 3rem;
     }
     .con_box {
@@ -544,13 +551,21 @@
         order: 5;
         position: relative;
         font-size: 3rem;
-        border: 3px solid var(--secondary);
+        outline: none;
+        border-bottom: 3px solid var(--primary);
+    }
+    .my_con {
+        position: relative;
+        left: 15em;
+        bottom: 7rem;
+        font-size: 2rem;
+
     }
     .button2 {
         position: relative;
         color: white;
         left: 1em;
-        top: 1em;
+        bottom: 1em;
         width: 5em;
         font-size: 2rem;
         text-shadow: 1px 3px rgba(6, 224, 253, 0.50);
@@ -581,6 +596,7 @@
         font-size: 4rem;
         position: relative;
         top: 20%;
+        left: 5em;
     }
     .project_1:visited {
         color: white;
