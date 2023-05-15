@@ -219,6 +219,7 @@
     .name,
     .email,
     .tel {
+        background: black;
         color: var(--primary);
         width: 6em;
         margin-top: 1rem;
@@ -226,10 +227,10 @@
         order: 5;
         position: relative;
         font-size: 2rem;
+        border: none;
         border-bottom: 3px solid var(--primary);
         outline: none;
-        border: none;
-        background: transparent;
+
 
     }
     /*.button2 {
